@@ -1,7 +1,7 @@
 name: 01 - Building
 
 on:
-  push:
+  workflow_dispatch:
 
 jobs: 
     echo-hello:
@@ -15,7 +15,7 @@ jobs:
             - name: Failed Step
               run: |
                 echo "Goodbye World"
-                exit 1
+                exit 0
             - name: Say Goodbye
               run: echo "Goodbye World"
     
